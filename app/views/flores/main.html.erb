@@ -1,0 +1,121 @@
+<%= render("flores/topbar") %>
+<body ng-app ng-controller='ronnieController'>
+<div class="row">
+  <div class="small-12 columns">
+    <div>
+      <h1>Flores de Bach</h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="small-12 columns">
+
+    <ul data-orbit ng-show='full_view'>
+     <article ng-repeat='f in selectedItem' ng-click='deleteFromSelection($index)'>
+
+
+
+
+       <li ng-show='full_view' data-orbit-slide="headline{{f.index}}">
+            <br>
+            <h2>{{f.flor}}</h2>
+               <img ng-src="{{folder_img}}{{f.flor}}.JPG" width="40%">
+            <h3>Categoria:</h3>
+            <small>{{f.categoria}}</small>
+            <h3>Enfermedad:</h3>
+            <small>{{f.enfermedad}}</small>
+            </h3>
+            <h3>Descripcion:</h3>
+            <small>{{f.descripcion}}</small>
+
+       </li>
+
+
+
+
+
+      </article>
+    </ul>
+    <div ng-hide='full_view'>
+    <h2>Haga su seleccion:</h2>
+    <div ng-repeat='f in selectedItem' ng-click='deleteFromSelection($index)'>
+      <h3>
+        {{f.flor}}
+        <i class="icon-check" align="bottom" style="color:#000000;" align="left"></i>
+      </h3>
+    </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row">
+  <div class="small-12 columns">
+    <form ng-submit='listo()'>
+      <dl>
+        <dt>
+        </dt>
+        <dd>
+          <select name="selecion" ng-model='selectedItem' ng-options='f.flor for f in flores' multiple="multiple" ng-hide='ready'>
+          </select>
+        </dd>
+      </dl>
+      <button width="100%" ng-show='ready'>Siguiente</button>
+    </form>
+
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js">
+</script>
+<script>
+    function ronnieController($scope, $http) {
+
+        $scope.ready = false;
+        $scope.full_view = false;
+        $scope.folder_img = "/assets/flores/";
+
+        $scope.selectedItem = [];
+
+        $http.get('/flores.json').success(function (data) {
+            $scope.flores = data;
+            console.log(data);
+        }).
+                error(function (data, status) {
+                    alert(status);
+                }
+
+        );
+        $scope.deleteFromSelection = function (id) {
+            if ($scope.full_view == true) {
+                return;
+            }
+            $scope.selectedItem.splice(id, 1);
+            $scope.ready = false;
+        };
+
+        $scope.areWeDone = function () {
+            if ($scope.selectedItem.length == 6) {
+                $scope.ready = true
+                alert("Tu seleccion ha sido completada!");
+            } else {
+                $scope.ready = false;
+
+            }
+
+        };
+
+        $scope.listo = function () {
+            $scope.full_view = true;
+            $(document).foundation('orbit', {animation_speed: 1200});
+        };
+
+        $scope.$watch('selectedItem', $scope.areWeDone);
+    }
+
+    $(window).on("load", function () {
+        image - wrapper - header.css("opacity", .1)
+    })
+
+
+</script>
+

@@ -1,0 +1,99 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require foundation_and_overrides
+ *= require_self
+ *= require _font-awesome
+ *= require_tree .
+*/
+$body-bg: #efefef;
+$orbit-container-bg: rgba(0,0,0,.2);
+$orbit-nav-bg-old: rgba(0,0,0,.2);
+
+@import "foundation";
+@import 'font-awesome';
+
+
+@import url(http://fonts.googleapis.com/css?family=Aguafina+Script);
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
+@import url(http://fonts.googleapis.com/css?family=Abel);
+
+
+
+body {
+  background-image: url('/assets/flores/Cerato.JPG');
+
+}
+
+h1 {
+  font-size: 52px;
+  font-family: 'Aguafina Script', script;
+  text-shadow: #444444 1px 3px 1px;
+  background-color: rgba(0,0,0,.2);
+}
+
+h2 {
+  font-size: 24px;
+  font-family: 'Arvo', script;
+
+}
+
+img {
+  border-color:  #22222;
+  border: 1px;
+  border-bottom: 2px;
+
+}
+
+h3 {
+  font-size: 18px;
+  background-color: rgba(0,0,0,.2);
+  border-color: #222222;
+  border-radius: 2px;
+
+
+}
+
+.placeimage{
+  border-color: #222222;
+  background-color: rgba(0,0,0,.2);
+  border-radius: 2px;
+  z-index: -3;
+}
+
+.orbit-container {
+  background-color: rgba(0,0,0,.3);
+  border-color: #222222;
+  border: #222222 1px;
+
+}
+
+button {
+
+  background-color: rgba(0,0,0,.2);
+  border-color: #222222;
+  font-family: 'Aguafina Script', cursive;
+  width: 100%;
+  text-shadow: #444444 1px 3px 1px;
+  border-radius: 2px;
+  font-size: 24px;
+
+
+}
+
+article {
+  font-family: 'Arvo', script;
+}
+
+.data-orbit-slide {
+  background-color: rgba(0,0,0,.2);
+
+}
+
