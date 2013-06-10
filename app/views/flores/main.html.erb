@@ -19,15 +19,13 @@
        <li ng-show='full_view' data-orbit-slide="headline{{f.index}}">
             <br>
             <h2 align="center">{{f.flor}} </h2>
-               <img ng-src="{{folder_img}}{{f.flor}}.JPG" width="100%" align="center">
+               <img ng-src="{{folder_img}}{{f.flor}}.JPG" width="100%" align="center" class="image_border">
             <h3>Categoria:</h3>
             <p>{{f.categoria}}</p>
             <h3>Enfermedad:</h3>
             <p>{{f.enfermedad}}</p>
-            </h3>
             <h3>Descripcion:</h3>
             <p>{{f.descripcion}}</p>
-
        </li>
 
 
@@ -39,7 +37,7 @@
     <div ng-hide='full_view'>
     <h2 align='center'>
 
-      Selecciona
+      Selecciona <span>{{missing}}</span> flores
        <i class="icon-hand-left" align="bottom" id='sel_label' style="color:#000000;" align="left"></i>
     </h2>
     <div ng-repeat='f in selectedItem' ng-click='deleteFromSelection($index)'>
@@ -64,10 +62,12 @@
           </select>
         </dd>
       </dl>
-      <button width="100%" ng-show='ready'>
-        Siguiente
-        <i class="icon-double-angle-right"  align="bottom" style="color:#000000;" align="left"></i>
-      </button>
+      <div align="center" ng-hide='full_view'>
+        <button ng-show='ready'>
+          Siguiente
+          <i class="icon-double-angle-right"  align="bottom" style="color:#ffffff;" align="left"></i>
+        </button>
+      </div>
     </form>
     <br>
     <br>
@@ -84,12 +84,12 @@
         $scope.ready = false;
         $scope.full_view = false;
         $scope.folder_img = "/assets/flores/";
+        $scope.missing=6;
 
         $scope.selectedItem = [];
 
         $http.get('/flores.json').success(function (data) {
             $scope.flores = data;
-            console.log(data);
         }).
                 error(function (data, status) {
                     alert(status);
@@ -105,9 +105,11 @@
             }
             $scope.selectedItem.splice(id, 1);
             $scope.ready = false;
+            $scope.missing= 6 - $scope.selectedItem.length ;
         };
 
         $scope.areWeDone = function () {
+            $scope.missing= 6 - $scope.selectedItem.length ;
             if ($scope.selectedItem.length == 6) {
                 $scope.ready = true
                 alert("Tu seleccion ha sido completada!");
