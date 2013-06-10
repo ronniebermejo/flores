@@ -18,15 +18,15 @@
 
        <li ng-show='full_view' data-orbit-slide="headline{{f.index}}">
             <br>
-            <h2>{{f.flor}}</h2>
-               <img ng-src="{{folder_img}}{{f.flor}}.JPG" width="40%">
+            <h2 align="center">{{f.flor}} </h2>
+               <img ng-src="{{folder_img}}{{f.flor}}.JPG" width="100%" align="center">
             <h3>Categoria:</h3>
-            <small>{{f.categoria}}</small>
+            <p>{{f.categoria}}</p>
             <h3>Enfermedad:</h3>
-            <small>{{f.enfermedad}}</small>
+            <p>{{f.enfermedad}}</p>
             </h3>
             <h3>Descripcion:</h3>
-            <small>{{f.descripcion}}</small>
+            <p>{{f.descripcion}}</p>
 
        </li>
 
@@ -37,13 +37,17 @@
       </article>
     </ul>
     <div ng-hide='full_view'>
-    <h2>Haga su seleccion:</h2>
+    <h2 align='center'>
+
+      Selecciona
+       <i class="icon-hand-left" align="bottom" id='sel_label' style="color:#000000;" align="left"></i>
+    </h2>
     <div ng-repeat='f in selectedItem' ng-click='deleteFromSelection($index)'>
-      <h3>
+      <h3 class="labels">
         {{f.flor}}
         <i class="icon-check" align="bottom" style="color:#000000;" align="left"></i>
       </h3>
-    </div>
+
     </div>
   </div>
 
@@ -56,13 +60,17 @@
         <dt>
         </dt>
         <dd>
-          <select name="selecion" ng-model='selectedItem' ng-options='f.flor for f in flores' multiple="multiple" ng-hide='ready'>
+          <select name="selecion"  ng-model='selectedItem' ng-options='f.flor for f in flores' multiple="multiple" ng-hide='ready'>
           </select>
         </dd>
       </dl>
       <button width="100%" ng-show='ready'>Siguiente</button>
     </form>
-
+    <br>
+    <br>
+     <h4 align="center">
+       Terapia Floral
+     </h4>
   </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js">
@@ -85,6 +93,9 @@
                 }
 
         );
+
+        $('#sel_label').slideUp(4600);
+
         $scope.deleteFromSelection = function (id) {
             if ($scope.full_view == true) {
                 return;

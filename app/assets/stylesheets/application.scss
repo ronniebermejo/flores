@@ -40,8 +40,14 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 28px;
   font-family: 'Arvo', script;
+
+}
+
+h4 {
+ @extend  h1;
+  font-size: 32px;
 
 }
 
@@ -53,26 +59,35 @@ img {
 }
 
 h3 {
-  font-size: 18px;
-  background-color: rgba(0,0,0,.2);
-  border-color: #222222;
+  font-size: 24px;
+    background-color: rgba(66, 50, 255, 0.66);
+    font-family: 'Aguafina Script', script;
+    border-color: #222222;
+    color: #ffffff;
   border-radius: 2px;
+}
 
+.labels {
+  @extend h3;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #000000;
 
 }
 
-.placeimage{
-  border-color: #222222;
-  background-color: rgba(0,0,0,.2);
-  border-radius: 2px;
-  z-index: -3;
-}
 
 .orbit-container {
   background-color: rgba(0,0,0,.3);
   border-color: #222222;
   border: #222222 1px;
+  font-family: 'Arvo', script;
 
+}
+
+p {
+  color: #ffffff;
+  text-shadow: #444444 1px 3px 1px;
+  font-size: 14px;
+;
 }
 
 button {
@@ -94,6 +109,5 @@ article {
 
 .data-orbit-slide {
   background-color: rgba(0,0,0,.2);
-
 }
 
