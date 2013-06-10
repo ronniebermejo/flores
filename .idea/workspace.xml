@@ -2,29 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fef485b-307e-483b-93c4-9e352d760a19" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/flores_de_bach.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/ronnie.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/flores/main.html.erb" afterPath="$PROJECT_DIR$/app/views/flores/main.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flores_de_bach.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="8fef485b-307e-483b-93c4-9e352d760a19" time="1370816542699" ignored="false" />
+    <file path="/Dummy.txt" changelist="8fef485b-307e-483b-93c4-9e352d760a19" time="1370822432283" ignored="false" />
     <file path="/index.html" changelist="8fef485b-307e-483b-93c4-9e352d760a19" time="1370806931999" ignored="false" />
     <file path="/routes.rb" changelist="8fef485b-307e-483b-93c4-9e352d760a19" time="1370807020704" ignored="false" />
-    <file path="/main.html.erb" changelist="8fef485b-307e-483b-93c4-9e352d760a19" time="1370821838893" ignored="false" />
+    <file path="/main.html.erb" changelist="8fef485b-307e-483b-93c4-9e352d760a19" time="1370823970366" ignored="false" />
     <file path="/foundation_and_overrides.scss" changelist="8fef485b-307e-483b-93c4-9e352d760a19" time="1370807570492" ignored="false" />
     <file path="/_topbar.html.erb" changelist="8fef485b-307e-483b-93c4-9e352d760a19" time="1370814637598" ignored="false" />
-    <file path="/application.scss" changelist="8fef485b-307e-483b-93c4-9e352d760a19" time="1370822256963" ignored="false" />
+    <file path="/application.scss" changelist="8fef485b-307e-483b-93c4-9e352d760a19" time="1370824041265" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,13 +36,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/flores/main.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="47" selection-start="2267" selection-end="2267" vertical-scroll-proportion="0.6122449">
+            <state line="65" column="11" selection-start="1618" selection-end="1618" vertical-scroll-proportion="-9.625">
               <folding>
                 <element signature="n#style#0;n#i#0;n#h2#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#button#0;n#form#0;n#div#0;n#div#1;n#div#1;n#body#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,10 +85,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="18" selection-start="1483" selection-end="1483" vertical-scroll-proportion="0.0">
+            <state line="66" column="42" selection-start="1485" selection-end="1485" vertical-scroll-proportion="0.67741936">
               <folding />
             </state>
           </provider>
@@ -769,7 +762,11 @@
       <created>1370816549995</created>
       <updated>1370816549995</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="New">
+      <created>1370822441929</created>
+      <updated>1370822441929</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -922,20 +919,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="18" selection-start="1483" selection-end="1483" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/flores/main.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="47" selection-start="2267" selection-end="2267" vertical-scroll-proportion="0.6122449">
+        <state line="65" column="11" selection-start="1618" selection-end="1618" vertical-scroll-proportion="-9.625">
           <folding>
             <element signature="n#style#0;n#i#0;n#h2#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#button#0;n#form#0;n#div#0;n#div#1;n#div#1;n#body#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="42" selection-start="1485" selection-end="1485" vertical-scroll-proportion="0.67741936">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -59,20 +59,20 @@ img {
 }
 
 h3 {
-  font-size: 24px;
-    background-color: rgba(66, 50, 255, 0.66);
-    font-family: 'Aguafina Script', script;
-    border-color: #222222;
-    color: #ffffff;
+  font-size: 18px;
+  border-color: #222222;
+  color: #ffffff;
   border-radius: 2px;
+  font-family: 'Arvo', script;
+  background-color: rgba(106, 62, 255, 0.70);
 }
 
-.labels {
-  @extend h3;
-  background-color: rgba(0, 0, 0, 0.1);
+.lables {
   color: #000000;
+  background-color: rgba(0,0,0,.3);
 
 }
+
 
 
 .orbit-container {
@@ -98,7 +98,8 @@ button {
   width: 100%;
   text-shadow: #444444 1px 3px 1px;
   border-radius: 2px;
-  font-size: 24px;
+  font-size: 30px;
+  padding: 3px;
 
 
 }

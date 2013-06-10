@@ -43,7 +43,7 @@
        <i class="icon-hand-left" align="bottom" id='sel_label' style="color:#000000;" align="left"></i>
     </h2>
     <div ng-repeat='f in selectedItem' ng-click='deleteFromSelection($index)'>
-      <h3 class="labels">
+      <h3 class="lables">
         {{f.flor}}
         <i class="icon-check" align="bottom" style="color:#000000;" align="left"></i>
       </h3>
@@ -64,7 +64,10 @@
           </select>
         </dd>
       </dl>
-      <button width="100%" ng-show='ready'>Siguiente</button>
+      <button width="100%" ng-show='ready'>
+        Siguiente
+        <i class="icon-double-angle-right"  align="bottom" style="color:#000000;" align="left"></i>
+      </button>
     </form>
     <br>
     <br>
