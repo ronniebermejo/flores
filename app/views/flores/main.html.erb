@@ -5,20 +5,18 @@
     <div>
       <h1>Flores de Bach</h1>
     </div>
+    <canvas id='drawn' width='5' height='5'>
+      Sorry, you need a browser that supports the HTML canvas element.
+    </canvas>
   </div>
 </div>
 <div class="row">
   <div class="small-12 columns">
-
     <ul data-orbit ng-show='full_view'>
      <article ng-repeat='f in selectedItem' ng-click='deleteFromSelection($index)'>
-
-
-
-
        <li ng-show='full_view' data-orbit-slide="headline{{f.index}}">
             <br>
-            <h2 align="center">{{f.flor}} </h2>
+            <h2 align="center" style="color:#ffffff">{{f.flor}} </h2>
                <img ng-src="{{folder_img}}{{f.flor}}.JPG" width="100%" align="center" class="image_border">
             <h3>Categoria:</h3>
             <p>{{f.categoria}}</p>
@@ -27,30 +25,21 @@
             <h3>Descripcion:</h3>
             <p>{{f.descripcion}}</p>
        </li>
-
-
-
-
-
       </article>
     </ul>
     <div ng-hide='full_view'>
-    <h2 align='center'>
-
+    <h2 align='center' ng-hide='ready'>
       Selecciona <span>{{missing}}</span> flores
        <i class="icon-hand-left" align="bottom" id='sel_label' style="color:#000000;" align="left"></i>
     </h2>
     <div ng-repeat='f in selectedItem' ng-click='deleteFromSelection($index)'>
-      <h3 class="lables">
+      <div class="lables">
         {{f.flor}}
-        <i class="icon-check" align="bottom" style="color:#000000;" align="left"></i>
-      </h3>
-
+        <i class="icon-remove-sign" style="color:#000000;text-align:right;position: absolute;left: 85%"></i>
+      </div>
     </div>
   </div>
-
 </div>
-
 <div class="row">
   <div class="small-12 columns">
     <form ng-submit='listo()'>
@@ -58,8 +47,10 @@
         <dt>
         </dt>
         <dd>
-          <select name="selecion"  ng-model='selectedItem' ng-options='f.flor for f in flores' multiple="multiple" ng-hide='ready'>
-          </select>
+          <div align="center">
+            <select name="selecion"  ng-model='selectedItem' ng-options='f.flor for f in flores' multiple="multiple" ng-hide='ready'>
+            </select>
+          </div>
         </dd>
       </dl>
       <div align="center" ng-hide='full_view'>

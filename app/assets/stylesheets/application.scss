@@ -13,7 +13,7 @@
  *= require _font-awesome
  *= require_tree .
 */
-$body-bg: #efefef;
+$body-bg: #ffffff;
 $orbit-container-bg: rgba(0,0,0,.2);
 $orbit-nav-bg-old: rgba(0,0,0,.2);
 
@@ -28,7 +28,11 @@ $orbit-nav-bg-old: rgba(0,0,0,.2);
 
 
 body {
-  background-image: url('/assets/flores/Cerato.JPG');
+  background-image: url('bg.jpg') ;
+  background-repeat: no-repeat;
+
+
+
 
 }
 
@@ -44,6 +48,7 @@ h2 {
   font-family: 'Arvo', script;
 
 }
+
 
 h4 {
  @extend  h1;
@@ -63,6 +68,7 @@ select {
   font-size: 20px;
   font-family: 'Arvo', script;
   background-color: rgb(0,0,0);
+  width: 70%;
 }
 
 h3 {
@@ -75,8 +81,12 @@ h3 {
 }
 
 .lables {
+  @extend h3;
+  font-size: 20px;
   color: #000000;
   background-color: rgba(0,0,0,.3);
+  padding-bottom: 3px;
+  padding-top: 3px;
 
 }
 
@@ -85,15 +95,16 @@ h3 {
 .orbit-container {
   background-color: rgba(0,0,0,.3);
   border-color: #222222;
-  border: #222222 1px;
+  border: #222222 5px;
   font-family: 'Arvo', script;
+  color: #ffffff;
+
 
 }
 
 p {
   color: #ffffff;
-  text-shadow: #444444 1px 3px 1px;
-  font-size: 14px;
+  font-size: 12px;
 ;
 }
 
@@ -102,16 +113,20 @@ button {
   color: #ffffff;
   background-color: rgb(0,0,0);
   font-family: 'Arvo', script;
-  width: 100%;
-  text-shadow: #444444 1px 3px 1px;
+  width: 85%;
   border-radius: 2px;
-  font-size: 30px;
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 
 
 }
 
 article {
   font-family: 'Arvo', script;
+  background-color: rgb(0,0,0);
+  color: #ffffff;
+  padding: 4px 4px 4px 4px;
 }
 
 .data-orbit-slide {
