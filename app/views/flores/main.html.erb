@@ -113,7 +113,7 @@
 
         $scope.listo = function () {
             $scope.full_view = true;
-            $(document).foundation('orbit', {animation_speed: 1200});
+            $(document).foundation('orbit', {animation_speed: 1200,timer_speed: 45000});
         };
 
         $scope.$watch('selectedItem', $scope.areWeDone);

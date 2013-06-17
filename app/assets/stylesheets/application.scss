@@ -17,6 +17,11 @@ $body-bg: #ffffff;
 $orbit-container-bg: rgba(0,0,0,.2);
 $orbit-nav-bg-old: rgba(0,0,0,.2);
 
+$orbit-timer-bg-old: #ffffff;
+$orbit-timer-bg: #9a57ff;
+
+
+
 @import "foundation";
 @import 'font-awesome';
 
@@ -113,11 +118,13 @@ button {
   color: #ffffff;
   background-color: rgb(0,0,0);
   font-family: 'Arvo', script;
-  width: 85%;
+  width: 246px;
   border-radius: 2px;
   font-size: 20px;
   padding-bottom: 10px;
   padding-top: 10px;
+
+  border-width: 0 14px 0 14px;
 
 
 }
