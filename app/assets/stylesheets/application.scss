@@ -18,7 +18,7 @@ $orbit-container-bg: rgba(0,0,0,.2);
 $orbit-nav-bg-old: rgba(0,0,0,.2);
 
 $orbit-timer-bg-old: #ffffff;
-$orbit-timer-bg: #9a57ff;
+$orbit-timer-bg: #bcbcbc;
 
 
 
@@ -35,28 +35,32 @@ $orbit-timer-bg: #9a57ff;
 body {
   background-image: url('bg.jpg') ;
   background-repeat: no-repeat;
-
-
-
+  background-color: #000000;
 
 }
 
 h1 {
   font-size: 52px;
   font-family: 'Aguafina Script', script;
+
+  color: #ffffff;
   text-shadow: #444444 1px 3px 1px;
   background-color: rgba(0,0,0,.2);
 }
 
 h2 {
   font-size: 28px;
+  color: #ffffff;
   font-family: 'Arvo', script;
+  text-shadow: #444444 1px 3px 1px;
+  background-color: rgba(0,0,0,.2);
 
 }
 
 
 h4 {
  @extend  h1;
+  color: #ffffff;
   font-size: 32px;
 
 }
@@ -72,7 +76,6 @@ select {
 
   font-size: 20px;
   font-family: 'Arvo', script;
-  background-color: rgb(0,0,0);
   width: 70%;
 }
 
@@ -88,7 +91,7 @@ h3 {
 .lables {
   @extend h3;
   font-size: 20px;
-  color: #000000;
+  color: #ffffff;
   background-color: rgba(0,0,0,.3);
   padding-bottom: 3px;
   padding-top: 3px;
@@ -109,6 +112,7 @@ h3 {
 
 p {
   color: #ffffff;
+  font-family: 'Helvetica';
   font-size: 12px;
 ;
 }
@@ -140,3 +144,32 @@ article {
   background-color: rgba(0,0,0,.2);
 }
 
+@media #{$medium} {
+
+
+  h1 {
+     font-size: 82px;
+  }
+
+  h3 {
+    text-align: left;
+  }
+
+  select {
+
+    font-size: 20px;
+    font-family: 'Arvo', script;
+    width: 30%;
+  }
+
+  .lables {
+
+      width: 50%;
+  }
+
+  body {
+
+    background-position: center;
+  }
+
+}

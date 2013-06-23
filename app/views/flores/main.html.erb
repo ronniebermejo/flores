@@ -17,13 +17,21 @@
        <li ng-show='full_view' data-orbit-slide="headline{{f.index}}">
             <br>
             <h2 align="center" style="color:#ffffff">{{f.flor}} </h2>
-               <img ng-src="{{folder_img}}{{f.flor}}.JPG" width="100%" align="center" class="image_border">
+               <img ng-src="{{folder_img}}{{f.img}}" width="100%" align="center" class="image_border">
+
+            <br>
+         <br>
+         <i class="icon-leaf" style="font-size: 22px;display:inline ">//{{f.flor}}</i>
+         <br>
+         <br>
+         <hr>
             <h3>Categoria:</h3>
             <p>{{f.categoria}}</p>
             <h3>Enfermedad:</h3>
             <p>{{f.enfermedad}}</p>
             <h3>Descripcion:</h3>
             <p>{{f.descripcion}}</p>
+         <hr>
        </li>
       </article>
     </ul>
@@ -35,7 +43,7 @@
     <div ng-repeat='f in selectedItem' ng-click='deleteFromSelection($index)'>
       <div class="lables">
         {{f.flor}}
-        <i class="icon-remove-sign" style="color:#000000;text-align:right;position: absolute;left: 85%"></i>
+        <i class="icon-remove-sign" style="color:#ffffff;text-align:right;position: absolute;left: 85%"></i>
       </div>
     </div>
   </div>
@@ -50,6 +58,8 @@
           <div align="center">
             <select name="selecion"  ng-model='selectedItem' ng-options='f.flor for f in flores' multiple="multiple" ng-hide='ready'>
             </select>
+
+
           </div>
         </dd>
       </dl>
